@@ -5,7 +5,7 @@
 Unity3D와 mono C#으로 개발되었습니다.
 
 
-# 설명(Deliver Notify)
+# 설명
 배달 통지 모듈(RUDPClient의 SendDeliverNotify 함수 호출로 사용)
 - UDP 패킷에 Sequence 번호를 부여
 - Sequence 번호가 부여된 패킷을 InflightPayloads에 저장
