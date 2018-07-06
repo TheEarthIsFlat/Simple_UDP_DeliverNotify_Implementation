@@ -44,7 +44,7 @@ public class JoinGame : UnityPeerPacketHandle {
         IPAddress ip;
         if (IPAddress.TryParse(ipInput.text, out ip))
         {
-            UnityPeer.Instance.ConnectTo(ip.ToString());
+            RUDPUnityManager.Instance.ConnectTo(ip.ToString());
         }
         else {
             Debug.Log("Wrong IP");

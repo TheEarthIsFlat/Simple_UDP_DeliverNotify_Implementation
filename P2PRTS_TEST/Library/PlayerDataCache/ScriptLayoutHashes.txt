@@ -139,4 +139,4 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 3e425b7c134484ff97aea939dcdc1bf8 Assembly-CSharp.dll:.UILogic
 22364d260bc44f446be8db4d0332d8a1 Assembly-CSharp.dll:.RUDPTest
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UnityPeer
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.RUDPUnityManager

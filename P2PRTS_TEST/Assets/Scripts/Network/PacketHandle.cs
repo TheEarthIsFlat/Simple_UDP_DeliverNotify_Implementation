@@ -22,12 +22,12 @@ using UnityEngine;
 public abstract class UnityPeerPacketHandle : MonoBehaviour {
     protected virtual void OnEnable()
     {
-        UnityPeer.onPacketReceive += OnMessage;
+        RUDPUnityManager.onPacketReceive += OnMessage;
     }
 
     protected virtual void OnDisable()
     {
-        UnityPeer.onPacketReceive -= OnMessage;
+        RUDPUnityManager.onPacketReceive -= OnMessage;
     }
 
     protected abstract void OnMessage(ReadonlyPacket packet);

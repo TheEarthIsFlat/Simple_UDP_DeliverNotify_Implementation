@@ -211,6 +211,7 @@ public partial class Packet
         SizeExceptFixedArea -= sizeof(float);
         return BitConverter.ToSingle(this.data, SizeIncludedFixedArea);
     }
+
     public bool Pop_Bool()
     {
         if (SizeExceptFixedArea < sizeof(bool))
@@ -220,6 +221,7 @@ public partial class Packet
         SizeExceptFixedArea -= sizeof(bool);
         return BitConverter.ToBoolean(this.data, SizeIncludedFixedArea);
     }
+
     public string Pop_String()
     {
         int length = this.Pop_Int32();
@@ -255,5 +257,18 @@ public partial class Packet
         return result;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

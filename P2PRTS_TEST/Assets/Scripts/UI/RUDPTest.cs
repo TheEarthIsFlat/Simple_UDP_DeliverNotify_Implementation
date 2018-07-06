@@ -25,13 +25,13 @@ public class RUDPTest : UnityPeerPacketHandle {
     {
         for (int i = 0; i < 5; i++) {
             Packet test = new Packet(Packet.HEADER.RUDP, 8);
-            UnityPeer.Instance.SendDeliverNotify(test, null);
+            RUDPUnityManager.Instance.SendDeliverNotify(test, null);
         }
     }
 
     IEnumerator CheckNetworkStatistics() {
         while (true) {
-            DeliverStatistics statistics = UnityPeer.Instance.GetDeliverStatistics();
+            DeliverStatistics statistics = RUDPUnityManager.Instance.GetDeliverStatistics();
             statistics.LossRate =  (float)statistics.FailedPayloadCount / (float)statistics.AllPayloadCount;
             string str = String.Format(
                 "Sending Payloads : {0} , Success : {1} , Loss : {2} \n Loss Rate : {3}%",
@@ -44,7 +44,7 @@ public class RUDPTest : UnityPeerPacketHandle {
     }
 
     public void OnDisconnectButton() {
-        UnityPeer.Instance.Disconnect(false);
+        RUDPUnityManager.Instance.Disconnect(false);
     }
 
     protected override void OnMessage(ReadonlyPacket packet)

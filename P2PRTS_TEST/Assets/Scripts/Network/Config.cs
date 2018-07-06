@@ -10,6 +10,6 @@ public class Config {
 
     public static readonly int ACK_TIMER_VALUE = 50; //ms
 
-    public static readonly int PACKET_DROP_SIMULATION_RATIO = 20; //100개의 패킷중 몇개의 패킷을 드랍할지 결정하는 비율 (디버그환경에서만 해당 시뮬레이션이 동작함.)
+    public static readonly int PACKET_DROP_SIMULATION_RATIO = 10; //100개의 패킷중 몇개의 패킷을 드랍할지 결정하는 비율 (디버그환경에서만 해당 시뮬레이션이 동작함.)
 }
 

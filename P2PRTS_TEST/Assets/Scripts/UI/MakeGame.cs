@@ -56,11 +56,11 @@ public class MakeGame : UnityPeerPacketHandle {
     }
 
     public void ConfirmGameCurrentOption() {
-        UnityPeer.Instance.ConnectWait();
+        RUDPUnityManager.Instance.ConnectWait();
     }
 
     public void CancelWaiting() {
-        UnityPeer.Instance.CancelWait();
+        RUDPUnityManager.Instance.CancelWait();
     }
 
     private void OnAcceptStart() {
